@@ -2,7 +2,7 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 
-@Disabled
+
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
@@ -10,8 +10,6 @@ import org.firstinspires.ftc.robotcore.internal.camera.delegating.DelegatingCapt
 
 @TeleOp
 public class IfPractice extends OpMode {
-
-
     @Override
     public void init() {
 
@@ -24,12 +22,12 @@ public class IfPractice extends OpMode {
        if(aButton) {
        telemetry.addData("A Button", "Pressed");
        }
-       telemetry.addData("A Button State", aButton);
+            telemetry.addData("A Button State", aButton);
 
        else {
            telemetry.addData("A Button", "NOT Pressed");
-        }
-       telemetry.addData("A Button", aButton)
+       }
+       telemetry.addData("A Button", aButton);
     }
 }
 
